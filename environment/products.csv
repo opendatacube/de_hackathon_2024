@@ -1,0 +1,4 @@
+product,definition
+s2_l2a,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/s2_l2a.odc-product.yaml
+cop_dem_glo_30,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/cop_dem_glo_30.odc-product.yaml
+dep_s2_geomad,https://raw.githubusercontent.com/digitalearthpacific/pacific-cube-in-a-box/main/products/dep_s2_geomad.odc-product.yaml

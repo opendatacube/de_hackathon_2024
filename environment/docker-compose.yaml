@@ -1,0 +1,10 @@
+services:
+  postgis:
+    image: postgis/postgis:16-3.4
+    restart: always
+    environment:
+      POSTGRES_DB: dearth
+      POSTGRES_USER: dearth
+      POSTGRES_PASSWORD: dearthdbpassword
+    ports:
+      - "5432:5432"

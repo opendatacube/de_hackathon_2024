@@ -1,0 +1,16 @@
+ows:
+  build:
+    context: ows
+    dockerfile: Dockerfile
+  volumes:
+    - ./ows_config:/env/config/ows_config
+  environment:
+    - DB_HOSTNAME=postgis
+    - DB_USERNAME=pacific
+    - DB_PASSWORD=${DB_PASSWORD}
+    - DB_DATABASE=pacific
+    - PYTHONPATH=/env/config
+    - WMS_CONFIG_PATH=/env/config/ows_config/ows.py
+    - DATACUBE_OWS_CFG=ows_config.ows.ows_cfg
+  ports:
+    - "8000:8000"
