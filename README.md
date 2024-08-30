@@ -40,6 +40,15 @@ Python libraries:
 pip install odc-apps-dc-tools datacube
 ```
 
+Export some environment variables:
+
+```bash
+export DB_HOSTNAME=localhost
+export DB_USERNAME=dearth
+export DB_PASSWORD=dearthdbpassword
+export DB_DATABASE=dearth
+```
+
 Then use Make to set things up:
 
 * `make up` do this in its own tab, runs PostGIS
