@@ -43,11 +43,13 @@ pip install odc-apps-dc-tools datacube
 Export some environment variables:
 
 ```bash
-export DB_HOSTNAME=localhost
-export DB_USERNAME=dearth
-export DB_PASSWORD=dearthdbpassword
-export DB_DATABASE=dearth
+export ODC_DEFAULT_DB_HOSTNAME=localhost
+export ODC_DEFAULT_DB_USERNAME=dearth
+export ODC_DEFAULT_DB_PASSWORD=dearthdbpassword
+export ODC_DEFAULT_DB_DATABASE=dearth
+export ODC_DEFAULT_INDEX_DRIVER=postgis
 ```
+
 
 Then use Make to set things up:
 

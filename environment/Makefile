@@ -17,7 +17,8 @@ index-dep-s2-geomad:
 		--catalog-href='https://stac.staging.digitalearthpacific.org' \
 		--bbox='$(ANTIMERIDIAN_BOX)' \
 		--datetime='2023' \
-		--collections='dep_s2_geomad'
+		--collections='dep_s2_geomad' \
+		--update-if-exists
 
 # https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T01KAA_20240825T221936_L2A
 index-sentinel-2:
@@ -26,7 +27,8 @@ index-sentinel-2:
 		--bbox='$(ANTIMERIDIAN_BOX)' \
 		--datetime="2024-08-25T00:00:00.000Z/2024-08-26T23:59:59.999Z" \
 		--collections='sentinel-2-c1-l2a' \
-		--rename-product='s2_l2a'
+		--rename-product='s2_l2a' \
+		--update-if-exists
 
 # Two items: https://earth-search.aws.element84.com/v1/search?collections=cop-dem-glo-30&bbox=179.99,-17.5,180.0,-17.49
 index-cop-dem-glo-30:
