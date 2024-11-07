@@ -63,6 +63,8 @@ To get the environment set up, you need to have installed Docker. Then follow th
 ### Install required repositories
 Note that the instructions below require switching to branches that contain datacube code for the 1.9 release, which is not officially out yet.
 
+The install instructions below install all packages in editable mode (using `-e`). This allows you to make changes to the code and have the packages automatically update as part of the environment. 
+
 #### Datacube
 
 ```
@@ -78,8 +80,8 @@ cd ../
 ```
 cd odc-tools/apps/dc_tools
 git switch develop-1.9
-`pip install -e .`
-`cd ../../../
+pip install -e .
+cd ../../../
 ```
 
 #### eo-datasets
@@ -113,6 +115,7 @@ In this step, we must configure the environment so that the datacube package kno
 ### Prepare the postgres database (docker-compose)
 
 In a new terminal, navigate to the `dehack` folder. Then run:
+
 ```
 cd de_hackathon_2024/environment
 make up
