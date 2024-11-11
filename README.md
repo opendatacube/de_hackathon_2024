@@ -141,7 +141,7 @@ Return to the original terminal, and ensure the `dehack` micromamba environment 
 #### Set datacube config
 For more information related to configuration in datacube 1.9, see the [ODC Docs](https://datacube-core.readthedocs.io/en/develop-1.9/installation/database/configuration.html). This can be done in two ways:
 
-##### Set environment variables
+##### 1. Set environment variables
 Run the following commands in the terminal
 
 ```
@@ -150,6 +150,19 @@ export ODC_DEFAULT_DB_DATABASE=dearth
 export ODC_DEFAULT_INDEX_DRIVER=postgis
 export ODC_DEFAULT_DB_USERNAME=dearth
 export ODC_DEFAULT_DB_PASSWORD=dearthdbpassword
+```
+
+##### 2. Create a datacube configuration file
+
+Create a file in your home directory, `~/.datacube.conf`, with the following content:
+
+```
+[default]
+db_hostname:localhost
+db_database:dearth
+index_driver:postgis
+db_username:dearth
+db_password:dearthdbpassword
 ```
 
 ### Initialise the datacube
